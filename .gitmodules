@@ -1,0 +1,18 @@
+[submodule "Malaria-Detection"]
+    path = Malaria-Detection
+    url = ../Malaria-Detection.git
+
+[submodule "mSSA"]
+    path = mSSA
+    url = ../mSSA.git
+
+[submodule "Portfolio-Optimization"]
+    path = Portfolio-Optimization
+    url = ../Portfolio-Optimization.git
+
+[submodule "SVHN-Recognition"]
+    path = SVHN-Recognition
+    url = ../SVHN-Recognition.git
+
+
+
