@@ -14,5 +14,9 @@
     path = SVHN-Recognition
     url = ../SVHN-Recognition.git
 
+[submodule "Bullet-Train"]
+    path = Bullet-Train
+    url = ../Bullet-Train.git
+
 
 
