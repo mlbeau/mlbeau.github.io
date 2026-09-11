@@ -219,3 +219,160 @@
   </div>
 </body>
 </html>
+    .card p { color: var(--muted); }
+    .card p:last-child { margin-bottom: 0; }
+    .process { max-width: 900px; color: var(--muted); }
+    .split { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; }
+    .research-copy { color: var(--muted); }
+    .research-note { border-left: 2px solid var(--gold); padding-left: 22px; color: var(--muted); }
+    .text-link { color: var(--gold); font-weight: 600; }
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 28px; }
+    .project-type { color: var(--gold); font-size: 13px; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 14px; }
+    .project-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 22px; }
+    .background-copy { color: var(--muted); }
+    .credentials { margin: 0; padding-left: 20px; color: var(--muted); }
+    .credentials li { padding-bottom: 14px; }
+    .credentials strong { display: block; color: var(--text); font-weight: 500; }
+    .contact { padding: 36px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; margin: 16px 0 52px; }
+    .contact p { max-width: 770px; color: var(--muted); }
+    .contact-details { display: flex; flex-wrap: wrap; gap: 20px 48px; margin: 26px 0 0; }
+    .contact-details dt { font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+    .contact-details dd { margin: 0; overflow-wrap: anywhere; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding: 24px 0 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+    footer p { margin: 0; }
+    footer .links { display: flex; flex-wrap: wrap; gap: 20px; }
+    @media (max-width: 800px) {
+      header { align-items: flex-start; flex-direction: column; gap: 18px; }
+      .services { grid-template-columns: 1fr; }
+      .split { grid-template-columns: 1fr; gap: 24px; }
+      .hero { padding: 48px 0; }
+    }
+    @media (max-width: 560px) {
+      .page { width: calc(100% - 36px); }
+      .intro { font-size: 18px; }
+      .section { padding: 38px 0; }
+      .projects { grid-template-columns: 1fr; }
+      .card, .contact { padding: 24px; }
+      .actions .button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header>
+      <a class="identity" href="https://mlbeau.github.io/" aria-label="Michael Beauchamp home">
+        <strong>Michael Beauchamp</strong>
+        <span>Founder &amp; Architect, LeanLogic Systems</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#research">Research</a>
+        <a href="#academic-projects">Work samples</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <p class="eyebrow">Data architecture · Engineering · Analytics</p>
+        <h1>Reliable data. Repeatable workflows. Decisions grounded in evidence.</h1>
+        <p class="intro">I help organizations reconcile data, automate recurring work, prepare migrations, and develop or evaluate forecasts. I founded LeanLogic Systems and lead the architecture and development of Exauren, our domain-intelligence platform.</p>
+        <div class="actions">
+          <a class="button primary" href="#contact">Discuss a project</a>
+          <a class="button" href="#academic-projects">View academic work samples</a>
+        </div>
+      </div>
+      <section class="section" id="services" aria-labelledby="services-heading">
+        <p class="eyebrow">Client services</p>
+        <h2 id="services-heading">Defined problems. Practical deliverables.</h2>
+        <p class="section-intro">I translate business objectives into scoped data engineering, automation, and analytical engagements, including defined work packages for consulting and technology partners.</p>
+        <div class="services">
+          <article class="card">
+            <h3>Data engineering</h3>
+            <p>Reconcile records across systems, build ingestion and transformation pipelines, and prepare and validate data migrations.</p>
+          </article>
+          <article class="card">
+            <h3>Workflow automation</h3>
+            <p>Automate recurring processing, validation checks, and reporting, with clear requirements and traceable results.</p>
+          </article>
+          <article class="card">
+            <h3>Predictive analytics</h3>
+            <p>Develop forecasts, evaluate models against meaningful baselines, and make uncertainty and limitations explicit.</p>
+          </article>
+        </div>
+        <p class="process">Each engagement starts with the available inputs, constraints, scope, and acceptance criteria. I provide architectural direction, guide implementation, and verify deliverables. Documentation and handoff are included in the agreed scope.</p>
+        <a class="text-link" href="https://www.exauren.ai/#services">Explore LeanLogic Systems client services →</a>
+      </section>
+      <section class="section split" id="research" aria-labelledby="research-heading">
+        <div>
+          <p class="eyebrow">Applied research</p>
+          <h2 id="research-heading">Exauren</h2>
+          <p class="research-copy">Exauren is LeanLogic Systems’ domain-intelligence platform in development for complex, high-obligation environments. Its architecture distinguishes statistical inference, rule-verified facts, and unresolved evidence.</p>
+          <a class="text-link" href="https://www.exauren.ai/#research">Explore Exauren research →</a>
+        </div>
+        <div class="research-note">
+          <p><strong>Current application: U.S. occupational safety.</strong> Research characterizes the establishment population using mandated OSHA injury data and evaluates whether preventive attention can be concentrated where consequential enforcement outcomes are subsequently observed.</p>
+          <p>The platform is designed for adaptation across domains. Its research emphasizes traceable evidence, explicit uncertainty, and defensible claim boundaries.</p>
+        </div>
+      </section>
+      <section class="section" id="academic-projects" aria-labelledby="projects-heading">
+        <p class="eyebrow">Selected portfolio</p>
+        <h2 id="projects-heading">Academic work samples</h2>
+        <p class="section-intro">These projects were completed as coursework in the MIT Professional Education Applied Data Science program. They provide examples of model development and evaluation through public notebooks and recorded outputs. They are academic work, separate from paid client delivery and Exauren research.</p>
+        <div class="projects">
+          <article class="card">
+            <div class="project-type">Computer vision · Image classification</div>
+            <h3>Malaria Detection</h3>
+            <p>Classification of parasitized and uninfected red-blood-cell images. An academic exploration of image preprocessing, neural-network models, and evaluation; not a clinical diagnostic system.</p>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/mlbeau/Malaria-Detection">Project repository →</a>
+              <a href="https://github.com/mlbeau/Malaria-Detection/blob/main/Malaria_Detection.ipynb">Notebook</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="project-type">Deep learning · Digit recognition</div>
+            <h3>SVHN Recognition</h3>
+            <p>Digit classification using Street View House Numbers image data. The notebook explores dense and convolutional neural networks and records differing model outcomes.</p>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/mlbeau/SVHN-Recognition">Project repository →</a>
+              <a href="https://github.com/mlbeau/SVHN-Recognition/blob/main/SVHN_Digit_Recognition.ipynb">Notebook</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section split" id="background" aria-labelledby="background-heading">
+        <div>
+          <p class="eyebrow">Background</p>
+          <h2 id="background-heading">Experience across operational domains</h2>
+          <p class="background-copy">My experience includes more than a decade of analytics and data infrastructure work within a Fortune 500 supply-chain organization, along with healthcare data engineering and higher-education analytics.</p>
+          <p class="background-copy">Across these settings, I connect requirements, data, implementation, and evidence so that results can be inspected, understood, and used responsibly.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/mlbeauchamp/">View professional experience on LinkedIn →</a>
+        </div>
+        <ul class="credentials" aria-label="Education">
+          <li><strong>M.S., Predictive Analytics</strong>Northwestern University</li>
+          <li><strong>B.S., Mathematics</strong>Northeastern State University</li>
+          <li><strong>Applied Data Science Program Certificate</strong>MIT Professional Education</li>
+        </ul>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">Scoped projects &amp; delivery partnerships</p>
+        <h2 id="contact-heading">Let’s define a useful first deliverable.</h2>
+        <p>Describe the result you need, the data or systems involved, and your timing. Based in Knoxville, Tennessee; available for remote engagements.</p>
+        <dl class="contact-details">
+          <div><dt>Project inquiries</dt><dd><a href="mailto:michael@exauren.ai">michael@exauren.ai</a></dd></div>
+          <div><dt>Company contact</dt><dd><a href="mailto:michael@leanlogic.ai">michael@leanlogic.ai</a></dd></div>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 Michael Beauchamp · LeanLogic Systems, LLC</p>
+      <div class="links">
+        <a href="https://www.exauren.ai/">Exauren</a>
+        <a href="https://www.linkedin.com/in/mlbeauchamp/">LinkedIn</a>
+        <a href="https://github.com/mlbeau">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
